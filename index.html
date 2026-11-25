@@ -1,0 +1,35 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Youth Faith Builder: Aventure Biblique Interactive</title><meta name="description" content="App mobile-first pour jeunes chrétiens africains : jeux narratifs, défis spirituels et sagesse biblique, accessible hors ligne sans backend."><meta name="keywords" content="bible, jeunesse, afrique, jeu, foi, interactif, mobile, chrétien"><link rel="canonical" href="https://danymumbere.github.io/youth-faith-builder/"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0a7d6c"><meta property="og:type" content="website"><meta property="og:site_name" content="The Lamp's Mark"><meta property="og:title" content="Youth Faith Builder: Aventure Biblique Interactive"><meta property="og:description" content="App mobile-first pour jeunes chrétiens africains : jeux narratifs, défis spirituels et sagesse biblique, accessible hors ligne sans backend."><meta property="og:url" content="https://danymumbere.github.io/youth-faith-builder/"><meta property="og:image" content="https://danymumbere.github.io/youth-faith-builder/og.svg"><meta property="og:image:alt" content="Youth Faith Builder: Aventure Biblique Interactive"><meta property="og:locale" content="fr_FR"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Youth Faith Builder: Aventure Biblique Interactive"><meta name="twitter:description" content="App mobile-first pour jeunes chrétiens africains : jeux narratifs, défis spirituels et sagesse biblique, accessible hors ligne sans backend."><meta name="twitter:image" content="https://danymumbere.github.io/youth-faith-builder/og.svg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Youth Faith Builder: Aventure Biblique Interactive","description":"App mobile-first pour jeunes chrétiens africains : jeux narratifs, défis spirituels et sagesse biblique, accessible hors ligne sans backend.","url":"https://danymumbere.github.io/youth-faith-builder/","applicationCategory":"LifestyleApplication","inLanguage":"fr","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"creator":{"@type":"Organization","name":"The Lamp's Mark","url":"https://thelampsmark.pages.dev/"}}</script><link rel="stylesheet" href="style.css"></head><body><div data-feature="offline-mode responsive-ui">
+    <nav data-feature="navigation-system">
+        <button id="nav-accueil">Accueil</button>
+        <button id="nav-aventure">Aventure</button>
+        <button id="nav-defi">Défis</button>
+        <button id="nav-profil">Profil</button>
+    </nav>
+
+    <main>
+        <section id="section-accueil" data-feature="daily-verse">
+            <h1>Bienvenue sur Youth Faith Builder</h1>
+            <div id="verse-container"></div>
+        </section>
+
+        <section id="section-aventure" data-feature="story-engine" style="display:none;">
+            <h1>Aventure Biblique</h1>
+            <div id="story-content"></div>
+            <button id="btn-next-story">Continuer l'histoire</button>
+        </section>
+
+        <section id="section-defi" data-feature="quiz-challenge" style="display:none;">
+            <h1>Défis Bibliques</h1>
+            <div id="quiz-container"></div>
+            <input type="text" id="input-answer" placeholder="Votre réponse">
+            <button id="btn-submit-quiz">Valider</button>
+        </section>
+
+        <section id="section-profil" data-feature="local-storage-progress" style="display:none;">
+            <h1>Mon Profil</h1>
+            <div id="display-score">Score actuel : 0</div>
+            <button id="btn-share-wa" data-feature="social-share">Partager sur WhatsApp</button>
+        </section>
+    </main>
+</div>
+<footer class="tlm"><p>Créé par <a href="https://thelampsmark.pages.dev/" target="_blank" rel="noopener">The Lamp's Mark</a></p><p>Cette application est gratuite. Pour la soutenir : mobile money Africell <strong>0906253050</strong></p><p><a href="https://wa.me/?text=Youth%20Faith%20Builder%3A%20Aventure%20Biblique%20Interactive%20https%3A%2F%2Fdanymumbere.github.io%2Fyouth-faith-builder%2F" target="_blank" rel="noopener">Partager sur WhatsApp</a> · <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdanymumbere.github.io%2Fyouth-faith-builder%2F" target="_blank" rel="noopener">Facebook</a> · <button type="button" id="tlm-share">Partager</button></p></footer><script>document.getElementById('tlm-share').onclick=()=>navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href).then(()=>alert('Lien copié'))</script><script type="module" src="js/app.js"></script></body></html>
