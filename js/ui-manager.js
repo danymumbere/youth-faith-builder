@@ -2,7 +2,7 @@ export const showSection = (sectionId) => {
     const sections = ["section-accueil", "section-aventure", "section-defi", "section-profil"];
     sections.forEach(id => {
         const el = document.getElementById(id);
-        if (el) el.style.display = (id === sectionId) ? "block" : "none";
+        if (el) el.hidden = (id !== sectionId);
     });
 };
 

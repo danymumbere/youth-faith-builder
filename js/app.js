@@ -21,9 +21,6 @@ const registerOfflineMode = async () => {
 registerOfflineMode();
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Injection des attributs manquants pour le validateur
-    document.body.setAttribute("data-feature", "offline-mode responsive-ui");
-
     // Injection responsive meta si absent
     if (!document.querySelector('meta[name="viewport"]')) {
         const meta = document.createElement('meta');
